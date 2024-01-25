@@ -58,7 +58,7 @@ Adding detailed descriptions to chapters is a cinch with our rich text editor. W
 ### Cloning the repository
 
 ```shell
-https://github.com/Valvide/code-showcase
+git clone https://github.com/Valvide/muyalogy.git
 ```
 
 ### Install packages

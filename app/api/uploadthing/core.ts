@@ -1,14 +1,15 @@
+import { currentUser } from "@/lib/auth";
+
 import { createUploadthing, type FileRouter } from "uploadthing/next";
 
 import { isTeacher } from "@/lib/teacher";
-import { currentUser } from "@/lib/auth";
 
 const f = createUploadthing();
+
 const handleAuth = async () => {
   const user = await currentUser();
 
   const isAuthorized = isTeacher(user?.id);
-
   if (!user?.id || !isAuthorized) throw new Error("Unauthorized");
   const userId = user.id;
   return { userId };
@@ -25,5 +26,4 @@ export const ourFileRouter = {
     .middleware(() => handleAuth())
     .onUploadComplete(() => {}),
 } satisfies FileRouter;
-
 export type OurFileRouter = typeof ourFileRouter;

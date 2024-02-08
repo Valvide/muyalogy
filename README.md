@@ -139,6 +139,15 @@ npx prisma generate
 npx prisma db push
 
 ```
+## Seeding the Database
+
+To seed the database with initial data, you will need to run the `seed.ts` script located in the `scripts` folder. This script initializes the database with the necessary data for the project to function correctly(Categories).
+
+### Steps to Run the Seed Script
+
+1. Open your terminal or command prompt.
+2. Navigate to the project's root directory.
+3. Change directory to the `script` folder by running:
 
 ### Start the app
 

@@ -148,6 +148,9 @@ To seed the database with initial data, you will need to run the `seed.ts` scrip
 1. Open your terminal or command prompt.
 2. Navigate to the project's root directory.
 3. Change directory to the `script` folder by running:
+4.   ```bash
+   cd script
+   node seed.ts
 
 ### Start the app
 

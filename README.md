@@ -1,5 +1,5 @@
 <a href="https://demo-nextjs-with-supabase.vercel.app/">
-  <img alt="Muyalogy Dashboard" src="">
+  <img alt="Muyalogy Dashboard" src="/Screenshot 2024-02-07 145502.png">
  <h1 align ="center">
      <strong>Project Features:</strong> 
 </h1>
